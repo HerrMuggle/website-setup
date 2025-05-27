@@ -23,12 +23,12 @@ This Bash script (`setup_website.sh`) automates the setup of a web server and de
 
    ```bash
    git clone https://github.com/HerrMuggle/website-setup.git
-   cd website-setup ```
+   cd website-setup
 
 2. Make the script executable:
    ```bash
-   chmod +X setup_website.sh ```
+   chmod +X setup_website.sh
 
 3. Run the script:
    ```bash
-   ./setup_website.sh ```
+   ./setup_website.sh
