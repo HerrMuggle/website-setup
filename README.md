@@ -11,11 +11,11 @@ This Bash script (`setup_website.sh`) automates the setup of a web server and de
 
 ## Features
 
-- Installs Apache and PHP.
-- Deploys a custom placeholder website (`Bean Haven Coffee`).
-- Enables and configures systemd services.
-- Adds necessary firewall rules.
-- Handles distribution-specific settings like web root locations and Apache configuration.
+- Checks if Apache, PHP, and unzip are already installed before attempting to install them.
+- Cleanly logs installed vs. newly installed packages.
+- Maintains compatibility with Ubuntu, Debian, AlmaLinux, openSUSE Leap.
+- Keeps error checks for Apache start, file copy, and unzip integrity.
+- Removes unnecessary echo verbosity but keeps clear feedback for each action.
 
 ## Usage
 
@@ -29,6 +29,6 @@ This Bash script (`setup_website.sh`) automates the setup of a web server and de
    ```bash
    chmod +X setup_website.sh
 
-3. Run the script:
+3. Ensure you have sudo privileges:
    ```bash
-   ./setup_website.sh
+   sudo ./setup_website.sh
